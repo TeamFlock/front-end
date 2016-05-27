@@ -14,7 +14,7 @@ angular.module('flockApp')
 	var data = {
 	  labels: [
 	      "Red",
-	      "Green",
+	      "Blue",
 	      "Yellow"
 	  ],
 	  datasets: [
@@ -36,10 +36,11 @@ angular.module('flockApp')
 	type: 'doughnut',
 	data: data
 	});
-	  
+
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
+
   });
