@@ -13,13 +13,13 @@ angular.module('flockApp')
 	var ctx = document.getElementById("myChart");
 	var data = {
 	  labels: [
-	      "Red",
-	      "Blue",
-	      "Yellow"
+	      "Flexible Spending",
+	      "Fixed Spending",
+	      "Saved"
 	  ],
 	  datasets: [
 	      {
-	          data: [300, 50, 100],
+	          data: [350, 67.80, 129.34],
 	          backgroundColor: [
 	              "#FF6384",
 	              "#36A2EB",
