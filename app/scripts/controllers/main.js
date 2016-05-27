@@ -16,9 +16,7 @@ angular.module('flockApp')
     ];
   });
 
-  /* ------------------------------------ Click on login and Sign Up to  changue and view the effect
----------------------------------------
-*/
+ // Login js
 
 function cambiar_login() {
   document.querySelector('.cont_forms').className = "cont_forms cont_forms_active_login";  

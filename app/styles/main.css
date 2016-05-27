@@ -44,8 +44,8 @@ body {
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  height: 500px;
+  border-bottom: 1px solid #ffc1a0;
+  height: 450px;
 }
 .jumbotron .btn {
   font-size: 21px;
@@ -109,7 +109,6 @@ position: relative;
   box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
     width: 100%;
   opacity: 0.8;
-  background: url("../image/logo.png") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -123,7 +122,7 @@ position: relative;
   left: -30px;
   margin-top: 30px; 
   width: 320px;
-  height: 310px;  background: url("../image/logo.png") no-repeat;
+  height: 310px;  
 -webkit-transition: all 0.5s;
 -moz-transition: all 0.5s;
 -ms-transition: all 0.5s;
@@ -162,24 +161,10 @@ transition: all 0.5s;
   left: -116px;
 }
 
-.cont_img_back_grey > img {
-  width: 100%;
-  opacity: 0.8;
-  background: url("../image/logo.png") no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;/*
-  animation-name: animar_fondo;
-  animation-duration: 20s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;*/
-}
-
 .cont_img_back_ {
   position: absolute;
-  background-color: rgba(174, 58, 115, 0.55);
+  background-color: rgba(99,
+   43, 108, 0.55);
   width: 950px;
   top:-80px;
   left: -136px;
@@ -187,7 +172,7 @@ transition: all 0.5s;
 
 .cont_img_back_ > img {
   width: 100%;
-opacity: 0.3;
+opacity: 0.99;
 animation-name: animar_fondo;
 animation-duration: 20s;
 animation-timing-function: linear;
@@ -232,14 +217,14 @@ z-index: 1;
 .col_md_login > h2 {
   font-weight: 400;
 margin-top: 70px;
-    color: #757575;
+    color: #632b6c;
 }
 
 .col_md_login > p {
  font-weight: 400;
 margin-top: 15px;
 width: 80%;
-    color: #37474F;
+    color: #632b6c;
 }
 
 .btn_login { 
@@ -249,7 +234,7 @@ background-color: #edbb73;
 width: 200px;
 border-radius:3px;
 box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.4);
-  color: #fff;
+  color: #ededed;
 margin-top: 10px;
 cursor: pointer;
 }
@@ -262,13 +247,13 @@ cursor: pointer;
 
 .cont_ba_opcitiy > h2 {
   font-weight: 400;
-  color: #fff;
+  color: #ededed;
 }
 
 .cont_ba_opcitiy > p {
  font-weight: 400;
 margin-top: 15px;
- color: #fff;
+ color: #ededed;
 }
 /* ----------------------------------
 background text    
@@ -276,7 +261,6 @@ background text
  */
 .cont_ba_opcitiy {
   position: relative;
-  background-color: rgba(38, 14, 51, 0.55);
   width: 80%;
   border-radius:3px ;
 margin-top: 60px;
@@ -290,7 +274,7 @@ background-color: #edbb73;
 width: 200px;
 border-radius:3px;
 box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.4);
-  color: #fff;
+  color: #ededed;
 margin-top: 10px;
 cursor: pointer;
 }
@@ -394,7 +378,7 @@ border: none;
 .cont_form_sign_up > h2 {
 margin-top: 50px; 
 font-weight: 400;
-  color: #757575;
+  color: #ededed;
 }
 
 
@@ -405,13 +389,13 @@ margin-top: 20px;
   width: 260px;
 border: none;
 text-align: left;
-  color: #757575;
+  color: #ededed;
 }
 
 .cont_form_login > h2 {
 margin-top: 110px; 
 font-weight: 400;
-  color: #757575;
+  color: #ededed;
 }
 .cont_form_login > a,.cont_form_sign_up > a  {
   color: #757575;
