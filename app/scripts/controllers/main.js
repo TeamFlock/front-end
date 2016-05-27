@@ -23,7 +23,7 @@ angular.module('flockApp')
 function check(){
   if (localStorage.getItem("user")!== "undefined"){
     // open view with user
-    window.location.href = './#/test';
+    window.location.href = './#/personal';
     console.log("hello")
   }
 }
@@ -91,7 +91,7 @@ document.querySelector('.cont_form_login').style.display = "none";
       results = snapshot.val();
       if (pass == results.users[user].pass){
         //return new view - link to new view
-        window.location.href = './#/test';
+        window.location.href = './#/personal';
 
         localStorage.setItem("user", user);
         localStorage.setItem("cusID", results.users[user].cusID)
