@@ -1,4 +1,7 @@
 
+<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+
+
 <h1 style="margin-bottom: 50px;">Welcome to Flock</h1>
 <div class="jumbotron">
 
@@ -37,19 +40,18 @@
       <div class="cont_form_login">
         <a href="#/" onclick="ocultar_login_sign_up()" ><b style="color: #dedede; font-size: 16px;">X</b></a>
           <h2>LOGIN</h2>
-        <input type="text" placeholder="Email" />
-        <input type="password" placeholder="Password" />
-        <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+        <input type="text" placeholder="Username" name="logUser"/>
+        <input type="password" placeholder="Password"  name="logPass"/>
+        <button class="btn_login" onclick="login()">LOGIN</button>
       </div>
   
       <div class="cont_form_sign_up" style="overflow-y: auto;">
         <a href="#/" onclick="ocultar_login_sign_up()"><b style="color: #dedede; font-size: 16px;">X</b></a>
-        <h2 style="margin-bottom: -3px;">SIGN UP</h2>
-        <input type="text" placeholder="Email"/>
-        <input type="text" placeholder="User" />
-        <input type="password" placeholder="Password" />
-        <input type="password" placeholder="Confirm Password" />
-        <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+        <h2>SIGN UP</h2>
+        <input type="text" placeholder="Username" name="signUser"/>
+        <input type="password" placeholder="Password" name="signPass"/>
+        <input type="password" placeholder="Confirm Password" name="signConfPass"/>
+        <button class="btn_sign_up" onclick="signup()">SIGN UP</button>
       </div>
     </div>
   </div>
@@ -71,3 +73,5 @@
   </p>
 
 </div> -->
+
+
