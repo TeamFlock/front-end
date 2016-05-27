@@ -9,6 +9,8 @@
  * # MainCtrl
  * Controller of the flockApp
  */
+check();
+
 angular.module('flockApp')
   .controller('MainCtrl', function () {
     this.awesomeThings = [
@@ -17,6 +19,14 @@ angular.module('flockApp')
       'Karma'
     ];
   });
+
+function check(){
+  if (localStorage.getItem("user")!== "undefined"){
+    // open view with user
+    window.location.href = './#/test';
+    console.log("hello")
+  }
+}
 
  // Login js
 
@@ -63,36 +73,44 @@ document.querySelector('.cont_form_login').style.display = "none";
 
 
   function login() {
-  var email = document.querySelector('[name="logEmail"]').value;
+  var user = document.querySelector('[name="logUser"]').value;
   var pass = document.querySelector('[name="logPass"]').value;
 
-  localStorage.setItem(email, pass);
+  //localStorage.setItem(user, pass);
   // get info on user from DB
-var config = {
-              apiKey: '4FwFE2ERblEgZcIXPpTRJ5K0X3BdOlrw9dtEpvoF',
-              // authDomain: '<your-auth-domain>',
-              databaseURL: 'https://parsley-f4ee0.firebaseio.com/'
-              // storageBucket: '<your-storage-bucket>'
-            };
-            firebase.initializeApp(config);
+    var config = {
+      apiKey: '4FwFE2ERblEgZcIXPpTRJ5K0X3BdOlrw9dtEpvoF',
+      // authDomain: '<your-auth-domain>',
+      databaseURL: 'https://parsley-f4ee0.firebaseio.com/'
+      // storageBucket: '<your-storage-bucket>'
+    };
+    firebase.initializeApp(config);
 
-            var results;
+    var results;
+    firebase.database().ref('/').once('value').then(function(snapshot) {
+      results = snapshot.val();
+      if (pass == results.users[user].pass){
+        //return new view - link to new view
+        window.location.href = './#/test';
 
-            firebase.database().ref('/').once('value').then(function(snapshot) {
-                results = snapshot.val();
-                console.log(results);
-            });
+        localStorage.setItem("user", user);
+        localStorage.setItem("cusID", results.users[user].cusID)
+      }
+    });
 
   }
 
 
   function signup() {
-  var email = document.querySelector('[name="signEmail"]').value;
+  var user = document.querySelector('[name="signUser"]').value;
   var pass = document.querySelector('[name="signPass"]').value;
   var confPass = document.querySelector('[name="signConfPass"]').value;
   localStorage.setItem(email, confPass);
 
   // pass user and pass to BD
+
+  // LEAVE FOR LATER
+
 
   }
 
