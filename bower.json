@@ -10,6 +10,7 @@
     "angular-route": "^1.4.0",
     "angular-sanitize": "^1.4.0",
     "angular-touch": "^1.4.0",
+    "Chart.js": "^2.1.4",
     "firebase": "^3.0.3"
   },
   "devDependencies": {
